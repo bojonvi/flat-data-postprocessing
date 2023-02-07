@@ -26,7 +26,7 @@ date
 processedJson[date] = json;
 
 // Step 3. Write a new JSON file with our filtered data
-const newFilename = `./data/btc-processed.json`; // name of a new file to be saved
+const newFilename = `btc-processed.json`; // name of a new file to be saved
 await writeJSON(newFilename, processedJson); // create a new JSON file with just the Bitcoin price
 console.log("Wrote a post process file");
 
