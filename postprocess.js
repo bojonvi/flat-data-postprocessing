@@ -19,11 +19,8 @@ console.log(processedJson);
 
 // Step 3:
 const date = new Date();
-date
-  .setDate(date.getDate() + 29)
-  .toISOString()
-  .split("T")[0];
-processedJson[date] = json;
+date.setDate(date.getDate() + 29);
+processedJson[date.toISOString().split("T")[0]] = json;
 
 // Step 3. Write a new JSON file with our filtered data
 const newFilename = `btc-processed.json`; // name of a new file to be saved
